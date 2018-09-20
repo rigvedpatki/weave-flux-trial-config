@@ -1,8 +1,7 @@
+---
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  annotations:
-    flux.weave.works/automated: 'true'
   name: hello-world
   labels:
     name: hello-world
@@ -14,7 +13,7 @@ spec:
         name: hello-world
     spec:
       containers:
-        - name: hello-world
-          image: gcr.io/weave-flux-trial/weave-flux-trial:master-45680f3
-          ports:
-            - containerPort: 8080
+      - name: hello-world
+        image: gcr.io/weave-flux-trial/weave-flux-trial:master-45680f3
+        ports:
+        - containerPort: 8080
