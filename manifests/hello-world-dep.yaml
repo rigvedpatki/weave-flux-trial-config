@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: gcr.io/weave-flux-trial/weave-flux-trial:master-16e5ecb
+        image: gcr.io/weave-flux-trial/weave-flux-trial:master-a4b4819
         ports:
         - containerPort: 8080
